@@ -1,0 +1,30 @@
+.menu-item{
+    width: 478px;
+    height: 590px;
+    border: 1px solid #c6c6c6;
+
+    h3{
+        margin: 55px 0 0 43px;
+        font-family: "Open sans";
+        font-weight: 300;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .price{
+        overflow: hidden;
+        width: 90px;
+        height: 70px;
+        padding: 0 5px;
+        border: 1px solid #c6c6c6;
+        text-align: center;
+        @include box-sizing(border-box);
+
+        span{
+            font-family: "Open sans";
+            font-weight: 300;
+            font-size: 36px;
+        }
+
+    }
+}
