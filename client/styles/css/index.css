@@ -7212,6 +7212,18 @@ h2 {
   text-transform: uppercase;
 }
 
+.contact-sprite, .contact-call, .home .about-us ul li:nth-child(1) a, .contact-mail, .home .about-us ul li:nth-child(2) a {
+  background: url('../../images/sprites/contact-sedc2539367.png') no-repeat;
+}
+
+.contact-call, .home .about-us ul li:nth-child(1) a {
+  background-position: 0 -22px;
+}
+
+.contact-mail, .home .about-us ul li:nth-child(2) a {
+  background-position: 0 0;
+}
+
 @font-face {
   font-family: "Roboto Regular";
   src: url('fonts/../../../fonts/roboto-regular/Roboto-Regular.ttf') format('truetype'), url('fonts/../../../fonts/roboto-regular/Roboto-Regular.woff') format('woff'), url('fonts/../../../fonts/roboto-regular/Roboto-Regular.svg') format('svg'), url('fonts/../../../fonts/roboto-regular/Roboto-Regular.otf') format('opentype');
@@ -7642,4 +7654,53 @@ header.scroll-open .container-header .list li a:hover {
   font-weight: 300;
   font-size: 24px;
   line-height: 40px;
+}
+.home .about-us {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 160px 15px 150px;
+  text-align: center;
+}
+.home .about-us h2 {
+  color: #ffa264;
+}
+.home .about-us p, .home .about-us a {
+  font-family: "Open sans";
+  font-weight: 300;
+  font-size: 22px;
+}
+.home .about-us p {
+  margin-top: 65px;
+  line-height: 35px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .about-us p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+.home .about-us p.contacts {
+  display: inline-block;
+  margin: 0;
+}
+.home .about-us ul {
+  display: inline-block;
+}
+.home .about-us ul li {
+  display: inline-block;
+  margin-left: 29px;
+}
+.home .about-us ul li a {
+  display: block;
+  height: 100%;
+  background-image: url(../../images/sprites/contact/contact.png.);
+  background-repeat: no-repeat;
+  line-height: 22px;
+}
+.home .about-us ul li:nth-child(1) a {
+  padding-left: 29px;
+}
+.home .about-us ul li:nth-child(2) a {
+  padding-left: 36px;
 }

@@ -1,0 +1,60 @@
+.about-us {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 160px 15px 150px;
+    text-align: center;
+
+    h2 {
+        color: #ffa264;
+    }
+    p, a {
+        font-family: "Open sans";
+        font-weight: 300;
+        font-size: 22px;
+    }
+    p {
+        margin-top: 65px;
+        line-height: 35px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 25px;
+            text-align: justify;
+        }
+
+        &.contacts{
+            display:inline-block;
+            margin: 0;
+        }
+    }
+
+        ul {
+            display: inline-block;
+
+            li {
+                display: inline-block;
+                margin-left: 29px;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    background-image: url(../../images/sprites/contact/contact.png.);
+                    background-repeat: no-repeat;
+                    line-height: 22px;
+                }
+                &:nth-child(1) {
+
+                    a {
+                        padding-left: 29px;
+                        @extend .contact-call;
+                    }
+                }
+                &:nth-child(2) {
+
+                    a {
+                        padding-left: 36px;
+                        @extend .contact-mail;
+                    }
+                }
+            }
+        }
+}

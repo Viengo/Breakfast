@@ -1,10 +1,14 @@
 //libs
 @import "compass/reset";
 @import "compass/css3";
-//@import "compass/utilities/sprites";
+@import "compass/utilities/sprites";
 @import "bootstrap";
 
 @import "base";
+
+//sprites
+@import "sprites/contact/*.png";
+@include all-contact-sprites;
 
 //fonts
 @import "fonts";
