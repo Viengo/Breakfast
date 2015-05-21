@@ -1,30 +1,160 @@
-.menu-item{
-    width: 478px;
-    height: 590px;
+.menu-item {
+    max-height: 590px;
+    margin-top: 50px;
     border: 1px solid #c6c6c6;
+    @include box-sizing(border-box);
 
-    h3{
-        margin: 55px 0 0 43px;
+    .price {
+        float: right;
+        display: block;
+        width: 90px;
+        padding: 0 5px;
+        border-bottom: 1px solid #c6c6c6;
+        border-left: 1px solid #c6c6c6;
         font-family: "Open sans";
         font-weight: 300;
-        font-size: 24px;
-        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 70px;
+        text-align: center;
+        @media(max-width: 1500px) {
+            width: 100%;
+            border-left: none;
+        }
     }
 
-    .price{
-        overflow: hidden;
-        width: 90px;
-        height: 70px;
-        padding: 0 5px;
-        border: 1px solid #c6c6c6;
-        text-align: center;
-        @include box-sizing(border-box);
+    h3 {
+        float: left;
+        margin: 50px 0 0 43px;
+        font-family: "Open sans";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-transform: uppercase;
+        @media(max-width: 1500px) {
+            margin: 20px 10px;
+            font-size: 18px;
+        }
+    }
 
-        span{
-            font-family: "Open sans";
-            font-weight: 300;
-            font-size: 36px;
+    figure {
+        position: relative;
+        margin-top: 160px;
+
+        img {
+            width: 100%;
+            height: 300px;
+
         }
 
+        figcaption {
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 35px 40px 60px 45px;
+            background-color: rgba(#ffffff, 0.8);
+            @include transition-property(opacity);
+            @include transition-duration(500ms);
+            @include opacity(0);
+
+            &:hover {
+                @include opacity(1);
+            }
+
+            h5, p {
+                font-family: "Open sans";
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            h5 {
+                margin: 25px 0 0;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            p {
+                text-overflow: ellipsis;
+                text-transform: capitalize;
+            }
+
+            @media(max-width: 992px) {
+                padding: 20px;
+
+                h5, p {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+    }
+    .sell-box {
+        height: 130px;
+        padding: 0 47px 0 38px;
+        @media(max-width: 1350px) {
+            padding: 0 20px;
+        }
+        @media(max-width: 767px) {
+            padding: 0 10px;
+        }
+        .item-minus, .item-plus {
+            float: left;
+            width: 33px;
+            margin-top: 46px;
+            font-family: "Roboto Regular";
+            font-size: 30px;
+            line-height: 33px;
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            @include border-radius(50%);
+
+            &.item-minus {
+                background-color: #cccccc;
+
+                &:hover {
+                    background-color: #9e9c9c;
+                }
+            }
+
+            &.item-plus {
+                background-color: #fbb97f;
+
+                &:hover {
+                    background-color: #ff7800;
+                }
+            }
+
+        }
+        input {
+            float: left;
+            width: 83px;
+            margin-top: 28px;
+            padding: 0;
+            outline: none;
+            border: none;
+            font-family: "Open sans";
+            font-weight: 300;
+            font-size: 48px;
+            text-align: center;
+            @media(max-width: 767px) {
+                width: 30px;
+                margin-top: 35px;
+                font-size: 38px;
+            }
+
+        }
+        .button {
+            float: right;
+            margin-top: 38px;
+            padding: 0 42px;
+            line-height: 48px;
+            @media(max-width: 767px) {
+                padding: 0 10px;
+            }
+        }
     }
 }

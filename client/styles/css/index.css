@@ -7336,6 +7336,11 @@ header.scroll-open .container-header .logo {
 header.scroll-open .container-header .list li {
   margin-right: 36px;
 }
+@media (max-width: 767px) {
+  header.scroll-open .container-header .list li {
+    margin-right: 0;
+  }
+}
 header.scroll-open .container-header .list li.basket a::before {
   top: 20px;
 }
@@ -7355,6 +7360,172 @@ header.scroll-open .container-header .list li a {
 }
 header.scroll-open .container-header .list li a:hover {
   background-color: #ffffff;
+}
+
+.menu-item {
+  max-height: 590px;
+  margin-top: 50px;
+  border: 1px solid #c6c6c6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu-item .price {
+  float: right;
+  display: block;
+  width: 90px;
+  padding: 0 5px;
+  border-bottom: 1px solid #c6c6c6;
+  border-left: 1px solid #c6c6c6;
+  font-family: "Open sans";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 70px;
+  text-align: center;
+}
+@media (max-width: 1500px) {
+  .menu-item .price {
+    width: 100%;
+    border-left: none;
+  }
+}
+.menu-item h3 {
+  float: left;
+  margin: 50px 0 0 43px;
+  font-family: "Open sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+@media (max-width: 1500px) {
+  .menu-item h3 {
+    margin: 20px 10px;
+    font-size: 18px;
+  }
+}
+.menu-item figure {
+  position: relative;
+  margin-top: 160px;
+}
+.menu-item figure img {
+  width: 100%;
+  height: 300px;
+}
+.menu-item figure figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 35px 40px 60px 45px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.menu-item figure figcaption:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.menu-item figure figcaption h5, .menu-item figure figcaption p {
+  font-family: "Open sans";
+  font-size: 18px;
+  line-height: 30px;
+}
+.menu-item figure figcaption h5 {
+  margin: 25px 0 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.menu-item figure figcaption p {
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+@media (max-width: 992px) {
+  .menu-item figure figcaption {
+    padding: 20px;
+  }
+  .menu-item figure figcaption h5, .menu-item figure figcaption p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.menu-item .sell-box {
+  height: 130px;
+  padding: 0 47px 0 38px;
+}
+@media (max-width: 1350px) {
+  .menu-item .sell-box {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .menu-item .sell-box {
+    padding: 0 10px;
+  }
+}
+.menu-item .sell-box .item-minus, .menu-item .sell-box .item-plus {
+  float: left;
+  width: 33px;
+  margin-top: 46px;
+  font-family: "Roboto Regular";
+  font-size: 30px;
+  line-height: 33px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.menu-item .sell-box .item-minus.item-minus, .menu-item .sell-box .item-plus.item-minus {
+  background-color: #cccccc;
+}
+.menu-item .sell-box .item-minus.item-minus:hover, .menu-item .sell-box .item-plus.item-minus:hover {
+  background-color: #9e9c9c;
+}
+.menu-item .sell-box .item-minus.item-plus, .menu-item .sell-box .item-plus.item-plus {
+  background-color: #fbb97f;
+}
+.menu-item .sell-box .item-minus.item-plus:hover, .menu-item .sell-box .item-plus.item-plus:hover {
+  background-color: #ff7800;
+}
+.menu-item .sell-box input {
+  float: left;
+  width: 83px;
+  margin-top: 28px;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: "Open sans";
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .menu-item .sell-box input {
+    width: 30px;
+    margin-top: 35px;
+    font-size: 38px;
+  }
+}
+.menu-item .sell-box .button {
+  float: right;
+  margin-top: 38px;
+  padding: 0 42px;
+  line-height: 48px;
+}
+@media (max-width: 767px) {
+  .menu-item .sell-box .button {
+    padding: 0 10px;
+  }
 }
 
 .home .presentation {
@@ -7393,4 +7564,8 @@ header.scroll-open .container-header .list li a:hover {
   font-size: 72px;
   text-align: center;
   text-transform: uppercase;
+}
+.home .menu .container-1 {
+  max-width: 1494px;
+  margin: 0 auto;
 }

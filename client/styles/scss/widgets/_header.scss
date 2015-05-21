@@ -12,6 +12,7 @@ header {
 
         .btn-style {
             background-color: #ff7800;
+
             .span-style {
                 background-color: #ffffff;
             }
@@ -109,6 +110,9 @@ header {
 
                 li {
                     margin-right: 36px;
+                    @media(max-width: 767px) {
+                        margin-right: 0;
+                    }
 
                     &.basket {
 
