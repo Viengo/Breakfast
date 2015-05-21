@@ -7248,6 +7248,15 @@ h2 {
   text-transform: uppercase;
   color: #ffffff;
 }
+.button:hover {
+  background-color: #99c8ef;
+  text-decoration: none;
+  color: #793900;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
 
 header {
   position: absolute;
@@ -7336,6 +7345,10 @@ header .container-header .list li a {
   line-height: 120px;
   text-transform: uppercase;
   color: #000000;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header .container-header .list li a {
@@ -7564,6 +7577,19 @@ header.scroll-open .container-header .list li a:hover {
     padding: 0 10px;
   }
 }
+.menu-item .sell-box .button:hover {
+  background-color: #00b05b;
+  color: #ffffff;
+}
+
+footer {
+  padding: 20px 0 80px;
+  text-align: center;
+}
+footer h2 {
+  font-size: 56px;
+  text-transform: none;
+}
 
 .home .presentation {
   background-image: url("../../images/backgrounds/presentation.jpg");
@@ -7599,10 +7625,7 @@ header.scroll-open .container-header .list li a:hover {
 .home .presentation .container-1 .button {
   margin-top: 50px;
   padding: 0 48px;
-  background-color: #ff7800;
   line-height: 80px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 .home .menu h2 {
   margin: 117px auto 0;
@@ -7788,4 +7811,75 @@ header.scroll-open .container-header .list li a:hover {
 }
 .home .people-say .reviews article span time {
   margin-left: 5px;
+}
+.home .faq {
+  padding: 80px 0 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .faq {
+    padding: 50px 15px;
+  }
+}
+.home .faq h2 {
+  text-align: center;
+}
+.home .faq .faq-list {
+  margin-top: 50px;
+  border: none;
+  font-size: 0;
+  text-align: center;
+}
+.home .faq .faq-list li {
+  float: none;
+  display: inline-block;
+}
+.home .faq .faq-list li:nth-child(1), .home .faq .faq-list li:nth-child(2) {
+  margin-right: 55px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .faq .faq-list li:nth-child(1), .home .faq .faq-list li:nth-child(2) {
+    margin-right: 0;
+  }
+}
+.home .faq .faq-list li.active > a {
+  color: #ffa264;
+}
+.home .faq .faq-list li a {
+  border: none;
+  font-size: 24px;
+  text-decoration: underline;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .faq .faq-list li a {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+}
+.home .faq .faq-list li a:hover {
+  color: #ffa264;
+}
+.home .faq .container-1 {
+  max-width: 1524px;
+}
+.home .faq .container-1 .content-style {
+  margin-top: 20px;
+  text-align: left;
+}
+.home .faq .container-1 .content-style P {
+  margin: 0;
+  font-family: "Open sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 45px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .faq .container-1 .content-style P {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+.home .faq .container-1 .content-style P.question {
+  margin-top: 30px;
+  color: #ffa264;
 }

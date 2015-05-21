@@ -160,6 +160,11 @@
             @media(max-width: 767px) {
                 padding: 0 10px;
             }
+
+            &:hover{
+                background-color: #00b05b;
+                color: #ffffff;
+            }
         }
     }
 }
