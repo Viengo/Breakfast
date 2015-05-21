@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,300);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7201,6 +7201,12 @@ button.close {
     display: none !important;
   }
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h1, h2, h3, h4, p, a {
   color: #000000;
 }
@@ -7210,6 +7216,11 @@ h2 {
   font-weight: 400;
   font-size: 72px;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
 }
 
 .contact-sprite, .contact-call, .home .about-us ul li:nth-child(1) a, .contact-mail, .home .about-us ul li:nth-child(2) a {
@@ -7569,11 +7580,21 @@ header.scroll-open .container-header .list li a:hover {
   font-size: 61px;
   font-weight: 400;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .presentation .container-1 h1 {
+    font-size: 30px;
+  }
+}
 .home .presentation .container-1 p {
   margin-top: 20px;
   font-family: "Open sans";
   font-size: 27px;
   font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .presentation .container-1 p {
+    font-size: 18px;
+  }
 }
 .home .presentation .container-1 .button {
   margin-top: 50px;
@@ -7600,6 +7621,11 @@ header.scroll-open .container-header .list li a:hover {
   padding: 166px 0 136px;
   border-bottom: 1px solid #898989;
   text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .how-it-work {
+    padding: 50px 15px;
+  }
 }
 .home .how-it-work .wrapper {
   margin-top: 80px;
@@ -7661,6 +7687,11 @@ header.scroll-open .container-header .list li a:hover {
   padding: 160px 15px 150px;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .about-us {
+    padding: 50px 15px;
+  }
+}
 .home .about-us h2 {
   color: #ffa264;
 }
@@ -7703,4 +7734,58 @@ header.scroll-open .container-header .list li a:hover {
 }
 .home .about-us ul li:nth-child(2) a {
   padding-left: 36px;
+}
+.home .people-say {
+  padding: 57px 0;
+  background-image: url("../../images/backgrounds/people-say.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .people-say .reviews {
+  max-width: 986px;
+  margin: 0 auto;
+  padding: 80px 75px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .people-say .reviews {
+    padding: 50px 15px;
+  }
+}
+.home .people-say .reviews h2 {
+  margin-bottom: 0;
+}
+.home .people-say .reviews article {
+  margin-top: 80px;
+  text-align: left;
+  clear: both;
+}
+.home .people-say .reviews article p {
+  margin-top: 25px;
+  font-family: "Open sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .home .people-say .reviews article p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+.home .people-say .reviews article span, .home .people-say .reviews article time {
+  float: right;
+  font-family: "Open-Sans";
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  color: #6e6e6e;
+}
+.home .people-say .reviews article span {
+  margin-top: 10px;
+}
+.home .people-say .reviews article span time {
+  margin-left: 5px;
 }

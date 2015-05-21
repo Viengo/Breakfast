@@ -12,12 +12,18 @@
             font-family: "Open sans";
             font-size: 61px;
             font-weight: 400;
+            @media (min-width: 320px) and (max-width: 767px){
+                font-size: 30px;
+            }
         }
         p {
             margin-top: 20px;
             font-family: "Open sans";
             font-size: 27px;
             font-weight: 400;
+            @media (min-width: 320px) and (max-width: 767px){
+                font-size: 18px ;
+            }
 
         }
         .button{

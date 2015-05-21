@@ -4,6 +4,9 @@
     padding: 166px 0 136px;
     border-bottom: 1px solid #898989;
     text-align: center;
+    @media (min-width: 320px) and (max-width: 767px){
+        padding: 50px 15px;
+    }
 
     .wrapper {
         margin-top: 80px;
