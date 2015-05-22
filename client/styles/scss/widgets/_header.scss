@@ -30,6 +30,11 @@ header {
             @media (max-width: 1200px) {
                 margin-left: 15px;
             }
+            @media(max-width: 767px) {
+                width: 122px;
+                height: 58px;
+
+            }
         }
 
         .list {

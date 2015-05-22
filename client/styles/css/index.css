@@ -7321,6 +7321,12 @@ header .container-header .logo {
     margin-left: 15px;
   }
 }
+@media (max-width: 767px) {
+  header .container-header .logo {
+    width: 122px;
+    height: 58px;
+  }
+}
 header .container-header .list {
   margin: 0 auto;
   text-align: center;
@@ -7631,7 +7637,7 @@ footer h2 {
   font-size: 56px;
   text-transform: none;
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
   footer h2 {
     font-size: 30px;
   }
@@ -7676,35 +7682,60 @@ footer p {
 }
 
 .home .presentation {
+  padding: 180px 0 120px;
   background-image: url("../../images/backgrounds/presentation.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
-.home .presentation .container-1 {
-  padding: 700px 0 120px;
+@media (min-width: 768px) and (max-width: 992px) {
+  .home .presentation {
+    padding: 155px 0 75px;
+  }
 }
-.home .presentation .container-1 h1 {
+@media (max-width: 767px) {
+  .home .presentation {
+    padding: 135px 0 50px;
+  }
+}
+.home .presentation img {
+  width: 965px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .home .presentation img {
+    width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .home .presentation img {
+    width: 290px;
+  }
+}
+.home .presentation h1 {
   font-size: 61px;
   font-weight: 400;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .home .presentation .container-1 h1 {
+@media (max-width: 767px) {
+  .home .presentation h1 {
     font-size: 30px;
   }
 }
-.home .presentation .container-1 p {
+.home .presentation p {
   margin-top: 20px;
   font-size: 27px;
   font-weight: 400;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .home .presentation .container-1 p {
+@media (max-width: 767px) {
+  .home .presentation p {
     font-size: 18px;
   }
 }
-.home .presentation .container-1 .button {
+.home .presentation .button {
   margin-top: 50px;
   padding: 0 48px;
   line-height: 80px;
@@ -7714,7 +7745,12 @@ footer p {
   padding-top: 117px;
   margin: 0 auto;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .home .menu {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 767px) {
   .home .menu {
     padding-top: 40px;
   }
@@ -7732,7 +7768,12 @@ footer p {
   border-bottom: 1px solid #898989;
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .home .how-it-work {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 767px) {
   .home .how-it-work {
     padding: 50px 15px;
   }
@@ -7757,7 +7798,7 @@ footer p {
   text-align: left;
   width: 215px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .how-it-work .wrapper figure:nth-child(3) {
     text-align: center;
   }
@@ -7767,7 +7808,7 @@ footer p {
     margin-right: 70px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .how-it-work .wrapper figure:nth-child(1), .home .how-it-work .wrapper figure:nth-child(2), .home .how-it-work .wrapper figure:nth-child(3) {
     display: block;
     min-width: 275px;
@@ -7784,7 +7825,7 @@ footer p {
   margin-top: 50px;
   text-align: left;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .how-it-work .wrapper figure figcaption {
     margin-top: 15px;
     border-bottom: 1px solid #c6c6c6;
@@ -7802,7 +7843,7 @@ footer p {
   padding: 160px 15px 150px;
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .about-us {
     padding: 50px 15px;
   }
@@ -7818,7 +7859,7 @@ footer p {
   margin-top: 65px;
   line-height: 35px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .about-us p {
     font-size: 16px;
     line-height: 25px;
@@ -7862,7 +7903,7 @@ footer p {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .people-say .reviews {
     padding: 50px 15px;
   }
@@ -7885,7 +7926,7 @@ footer p {
   margin-top: 25px;
   font-weight: 400;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .people-say .reviews article p {
     font-size: 16px;
     line-height: 25px;
@@ -7909,7 +7950,7 @@ footer p {
 .home .faq {
   padding: 80px 0 40px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .faq {
     padding: 50px 15px;
   }
@@ -7932,7 +7973,7 @@ footer p {
 .home .faq .faq-list li:nth-child(1), .home .faq .faq-list li:nth-child(2) {
   margin-right: 55px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .faq .faq-list li:nth-child(1), .home .faq .faq-list li:nth-child(2) {
     margin-right: 0;
   }
@@ -7944,7 +7985,7 @@ footer p {
   font-size: 24px;
   text-decoration: underline;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .faq .faq-list li a {
     padding: 10px 10px;
     font-size: 16px;
@@ -7965,7 +8006,7 @@ footer p {
   font-weight: 300;
   line-height: 45px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home .faq .container-1 .content-style P {
     font-size: 16px;
     line-height: 25px;

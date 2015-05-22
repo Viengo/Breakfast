@@ -1,33 +1,47 @@
 .presentation {
+    padding: 180px 0 120px;
     background-image: url("../../images/backgrounds/presentation.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    @media (min-width: 768px) and (max-width: 992px) {
+        padding: 155px 0 75px;
+    }
+    @media(max-width: 767px) {
+        padding: 135px 0 50px;
+    }
 
-    .container-1 {
-        padding: 700px 0 120px;
+    img {
+        width: 965px;
+        @include user-select(none);
+        @media(min-width: 768px) and (max-width: 992px) {
+            width: 600px
+        }
+        @media(max-width: 767px) {
+            width: 290px;
+        }
+    }
 
-        h1 {
-            font-size: 61px;
-            font-weight: 400;
-            @media (min-width: 320px) and (max-width: 767px) {
-                font-size: 30px;
-            }
+    h1 {
+        font-size: 61px;
+        font-weight: 400;
+        @media (max-width: 767px) {
+            font-size: 30px;
         }
-        p {
-            margin-top: 20px;
-            font-size: 27px;
-            font-weight: 400;
-            @media (min-width: 320px) and (max-width: 767px) {
-                font-size: 18px;
-            }
+    }
+    p {
+        margin-top: 20px;
+        font-size: 27px;
+        font-weight: 400;
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
 
-        }
-        .button {
-            margin-top: 50px;
-            padding: 0 48px;
-            line-height: 80px;
-        }
+    }
+    .button {
+        margin-top: 50px;
+        padding: 0 48px;
+        line-height: 80px;
     }
 }
