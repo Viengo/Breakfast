@@ -10,25 +10,26 @@
         padding: 80px 75px;
         background-color: rgba(#ffffff, 0.8);
         text-align: center;
-        @media (min-width: 320px) and (max-width: 767px){
-            padding:50px 15px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 50px 15px;
         }
 
-        h2{
+        h2 {
             margin-bottom: 0;
         }
 
-        article{
+        article {
             margin-top: 80px;
             text-align: left;
             clear: both;
 
-            p{
+            img {
+                @include user-select(none);
+            }
+
+            p {
                 margin-top: 25px;
-                font-family: "Open sans";
                 font-weight: 400;
-                font-size: 22px;
-                line-height: 35px;
                 @media (min-width: 320px) and (max-width: 767px) {
                     font-size: 16px;
                     line-height: 25px;
@@ -36,7 +37,7 @@
                 }
             }
 
-            span, time{
+            span, time {
                 float: right;
                 font-family: "Open-Sans";
                 font-weight: 300;
@@ -45,10 +46,10 @@
                 color: #6e6e6e;
             }
 
-            span{
+            span {
                 margin-top: 10px;
 
-                time{
+                time {
                     margin-left: 5px;
                 }
             }

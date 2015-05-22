@@ -2,15 +2,15 @@
     max-width: 1524px;
     padding-top: 117px;
     margin: 0 auto;
-    @media (min-width: 320px) and (max-width: 767px){
-        padding-top: 50px;
+    @media (min-width: 320px) and (max-width: 767px) {
+        padding-top: 40px;
     }
 
     h2 {
         text-align: center;
     }
 
-    .menu-item{
+    .menu-item {
         margin-top: 50px;
     }
 }

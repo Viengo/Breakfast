@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 160px 15px 150px;
     text-align: center;
-    @media (min-width: 320px) and (max-width: 767px){
+    @media (min-width: 320px) and (max-width: 767px) {
         padding: 50px 15px;
     }
 
@@ -11,7 +11,6 @@
         color: #ffa264;
     }
     p, a {
-        font-family: "Open sans";
         font-weight: 300;
         font-size: 22px;
     }
@@ -24,40 +23,40 @@
             text-align: justify;
         }
 
-        &.contacts{
-            display:inline-block;
+        &.contacts {
+            display: inline-block;
             margin: 0;
         }
     }
 
-        ul {
-            display: inline-block;
+    ul {
+        display: inline-block;
 
-            li {
-                display: inline-block;
-                margin-left: 29px;
+        li {
+            display: inline-block;
+            margin-left: 29px;
+
+            a {
+                display: block;
+                height: 100%;
+                background-image: url(../../images/sprites/contact/contact.png.);
+                background-repeat: no-repeat;
+                line-height: 22px;
+            }
+            &:nth-child(1) {
 
                 a {
-                    display: block;
-                    height: 100%;
-                    background-image: url(../../images/sprites/contact/contact.png.);
-                    background-repeat: no-repeat;
-                    line-height: 22px;
+                    padding-left: 29px;
+                    @extend .contact-call;
                 }
-                &:nth-child(1) {
+            }
+            &:nth-child(2) {
 
-                    a {
-                        padding-left: 29px;
-                        @extend .contact-call;
-                    }
-                }
-                &:nth-child(2) {
-
-                    a {
-                        padding-left: 36px;
-                        @extend .contact-mail;
-                    }
+                a {
+                    padding-left: 36px;
+                    @extend .contact-mail;
                 }
             }
         }
+    }
 }

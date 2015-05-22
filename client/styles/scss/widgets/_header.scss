@@ -1,11 +1,12 @@
 header {
     position: absolute;
     width: 100%;
+    @include user-select(none);
     @include transition-property(all);
     @include transition-duration(800ms);
 
     .container-header {
-        max-width: 1160px;
+        max-width: 1190px;
         margin: 0 auto;
         background-color: transparent;
         border: none;
@@ -26,6 +27,9 @@ header {
             background-image: url(../../images/logo.png);
             background-repeat: no-repeat;
             background-size: cover;
+            @media (max-width: 1200px) {
+                margin-left: 15px;
+            }
         }
 
         .list {
@@ -44,7 +48,7 @@ header {
                     margin-right: 0;
                 }
 
-                &.basket {
+                &:last-child {
                     margin-right: 0;
                     margin-left: 40px;
                     @media(max-width: 767px) {
@@ -100,13 +104,17 @@ header {
         z-index: 1;
         background-color: rgba(#ffffff, 0.8);
 
+        &:hover {
+            background-color: #ffffff;
+        }
+
         .container-header {
-            max-width: 1405px;
+            max-width: 1435px;
 
             .logo {
                 width: 122px;
                 height: 58px;
-                margin-top: 8px;
+                margin: 8px 0 0 15px;
             }
             .list {
 
@@ -116,7 +124,8 @@ header {
                         margin-right: 0;
                     }
 
-                    &.basket {
+                    &:last-child {
+                        margin-right: 0;
 
                         a {
 
@@ -134,10 +143,6 @@ header {
                         line-height: 74px;
                         @media(max-width: 767px) {
                             line-height: 50px;
-                        }
-
-                        &:hover{
-                            background-color: #ffffff;
                         }
                     }
                 }

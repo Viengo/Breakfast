@@ -5,12 +5,13 @@
     font-size: 27px;
     text-transform: uppercase;
     color: #ffffff;
+    @include user-select(none);
+    @include transition-property(all);
+    @include transition-duration(300ms);
 
     &:hover{
         background-color: #99c8ef;
         text-decoration: none;
         color: #793900;
-        @include transition-property(all);
-        @include transition-duration(300ms);
     }
 }

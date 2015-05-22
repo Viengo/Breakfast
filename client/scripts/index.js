@@ -1,9 +1,17 @@
+//Header scroll effect
 $(window).on("scroll touchmove", function () {
     $('#header-nav').toggleClass('scroll-open', $(document).scrollTop() > 0);
 });
 
-$('#myTab a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-    $('#myTab a[href="#meals"]').tab('show')
-})
+//Slow scroll
+jQuery(document).ready(function ($) {
+    $('a[href^="#menu"],a[href^="#faq"],a[href^="#about"],a[href^="#how-it-works"]').click(function () {
+        if (document.getElementById($(this).attr('href').substr(1)) != null) {
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500);
+        }
+        return false;
+    });
+
+//Tooltip
+    $("a").tooltip();
+});
