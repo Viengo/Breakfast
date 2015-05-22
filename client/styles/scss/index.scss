@@ -8,7 +8,9 @@
 
 //sprites
 @import "sprites/contact/*.png";
+@import "sprites/social/*.png";
 @include all-contact-sprites;
+@include all-social-sprites;
 
 //fonts
 @import "fonts";
@@ -20,6 +22,7 @@
 @import "widgets/header";
 @import "widgets/menu-item";
 @import "widgets/footer";
+@import "widgets/social";
 
 //layouts
 @import "layouts/home";

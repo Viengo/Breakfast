@@ -1,14 +1,16 @@
 .menu {
+    max-width: 1524px;
+    padding-top: 117px;
+    margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 767px){
+        padding-top: 50px;
+    }
 
     h2 {
-        margin: 117px auto 0;
-        font-family: "Open sans";
-        font-weight: 400;
-        font-size: 72px;
         text-align: center;
-        text-transform: uppercase;
     }
-    .container-1 {
-        max-width: 1494px;
+
+    .menu-item{
+        margin-top: 50px;
     }
 }

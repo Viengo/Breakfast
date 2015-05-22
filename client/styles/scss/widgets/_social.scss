@@ -1,0 +1,48 @@
+.social {
+    font-size: 0;
+    @include user-select(none);
+
+    li {
+        display: inline-block;
+        width: 35px;
+        height: 40px;
+        margin-right: 55px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            a {
+                @include opacity(0.8);
+            }
+        }
+
+        a {
+            display: block;
+            height: 100%;
+            background-image: url(../../images/sprites/social.png);
+            background-repeat: no-repeat;
+            @include transition-property(all);
+            @include transition-duration(300ms);
+        }
+
+        &:nth-child(1){
+            a {
+                @extend .social-fb;
+            }
+        }
+
+        &:nth-child(2){
+            a {
+                @extend .social-in;
+            }
+        }
+
+        &:nth-child(3) {
+            a {
+                @extend .social-p;
+            }
+        }
+    }
+}
