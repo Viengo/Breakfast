@@ -4,6 +4,10 @@
 @import "compass/utilities/sprites";
 @import "bootstrap";
 
+//mixins
+@import "mixins/user-select";
+@import "mixins/breakpoints";
+
 @import "base";
 
 //sprites
@@ -28,6 +32,9 @@
 //layouts
 @import "layouts/home";
 
-//mixins
-@import "mixins/user-select";
+
+
+
+
+
 

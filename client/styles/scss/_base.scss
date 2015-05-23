@@ -7,7 +7,7 @@ h2 {
     font-weight: 400;
     font-size: 72px;
     text-transform: uppercase;
-    @media (min-width: 320px) and (max-width: 767px) {
+    @include breakpoint(extra-small){
         font-size: 30px;
     }
 }

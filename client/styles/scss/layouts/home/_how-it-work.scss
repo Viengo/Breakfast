@@ -4,11 +4,11 @@
     padding: 166px 0 136px;
     border-bottom: 1px solid #898989;
     text-align: center;
-    @media (min-width: 768px) and (max-width: 992px){
+    @include breakpoint(small) {
         padding-top: 70px;
     }
 
-    @media (max-width: 767px) {
+    @include breakpoint(extra-small) {
         padding: 50px 15px;
     }
 
@@ -31,17 +31,17 @@
             &:nth-child(3) {
                 text-align: left;
                 width: 215px;
-                @media (max-width: 767px) {
+                @include breakpoint(extra-small) {
                     text-align: center;
                 }
             }
             &:nth-child(1), &:nth-child(2), {
-                @media (min-width: 768px) and (max-width: 992px) {
+                @include breakpoint(small) {
                     margin-right: 70px
                 }
             }
             &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-                @media (max-width: 767px) {
+                @include breakpoint(extra-small) {
                     display: block;
                     min-width: 275px;
                     margin: 30px auto 0;
@@ -55,7 +55,7 @@
             figcaption {
                 margin-top: 50px;
                 text-align: left;
-                @media (max-width: 767px) {
+                @include breakpoint(extra-small) {
                     margin-top: 15px;
                     border-bottom: 1px solid #c6c6c6;
                     text-align: center;

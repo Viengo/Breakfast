@@ -2,11 +2,11 @@
     max-width: 1524px;
     padding-top: 117px;
     margin: 0 auto;
-    @media (min-width: 768px) and (max-width: 992px){
+    @include breakpoint(small) {
         padding-top: 70px;
     }
 
-    @media (max-width: 767px) {
+    @include breakpoint(extra-small) {
         padding-top: 40px;
     }
 
