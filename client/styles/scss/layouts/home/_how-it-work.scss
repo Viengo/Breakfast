@@ -29,12 +29,9 @@
                 margin-right: 180px;
             }
             &:nth-child(3) {
-                text-align: left;
                 width: 215px;
-                @include breakpoint(extra-small) {
-                    text-align: center;
-                }
             }
+
             &:nth-child(1), &:nth-child(2), {
                 @include breakpoint(small) {
                     margin-right: 70px

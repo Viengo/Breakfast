@@ -17,8 +17,8 @@
 @include all-social-sprites;
 
 //fonts
-@import "fonts/roboto";
-@import "fonts/open-sans";
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300);
 
 //components
 @import "components/button";

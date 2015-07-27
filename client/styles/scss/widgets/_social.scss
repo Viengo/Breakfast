@@ -23,7 +23,7 @@
             height: 100%;
             background-image: url(../../images/sprites/social.png);
             background-repeat: no-repeat;
-            @include transition-property(all);
+            @include transition-property(opacity);
             @include transition-duration(300ms);
         }
 

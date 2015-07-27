@@ -13,5 +13,5 @@ jQuery(document).ready(function ($) {
     });
 
 //Tooltip
-    $("a").tooltip();
+    $("#about a,footer a").tooltip();
 });
